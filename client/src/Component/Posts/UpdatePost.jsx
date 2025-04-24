@@ -58,6 +58,8 @@ function UpdatePost({ post, getAllPosts }) {
                             event.preventDefault();
                             await UpdatePost(post._id);
                             handleClose();
+                            setTitle('');
+                            setBody('')
                         },
                     },
                 }}

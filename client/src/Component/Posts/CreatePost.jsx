@@ -47,6 +47,7 @@ const CreatePost = ({getAllPosts}) =>{
                             event.preventDefault();
                             await createPost(); 
                             handleClose();
+                            setTitle('');setBody('')
                         },
                     },
                 }}
